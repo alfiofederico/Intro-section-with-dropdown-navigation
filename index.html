@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+</head>
+<body>
+  <div class="container">
+    <header class="page-header">
+      <a href="index.html" class="logo">
+        <img src="./images/logo.svg" alt="snap logo" class="logo-img">
+      </a>
+      <!-- Navigation -->
+      <nav class="header-nav">
+        <!-- Navigation menu -->
+        <ul class="nav-menu">
+          <!-- Features button with dropdown menu -->
+          <li class="nav-menu-item dropdown-wrapper">
+            <button class="btn dropdown-btn">Features 
+              <svg width="10" height="6" xmlns="http://www.w3.org/2000/svg" class="down-arrow"><path stroke="#686868" stroke-width="1.5" fill="none" d="m1 1 4 4 4-4" class="menu-item-icon"/></svg>
+              <!-- <svg width="10" height="6" xmlns="http://www.w3.org/2000/svg" class="up-arrow"><path stroke="#686868" stroke-width="1.5" fill="none" d="m1 5 4-4 4 4" class="menu-item-icon" /></svg> -->
+            </button>
+            <!-- Dropdown menu -->
+            <ul class="dropdown-menu right">
+              <li class="dropdown-item">
+                <img src="./images/icon-todo.svg" alt="todo icon" class="dropdown-icon">
+                <a href="#" class="dropdown-link">Todo List</a>
+              </li>
+              <li class="dropdown-item">
+                <img src="./images/icon-calendar.svg" alt="calendar icon" class="dropdown-icon">
+                <a href="#" class="dropdown-link">Calendar</a>
+              </li>
+              <li class="dropdown-item">
+                <img src="./images/icon-reminders.svg" alt="bell icon" class="dropdown-icon">
+                <a href="#" class="dropdown-link">Reminder</a>
+              </li>
+              <li class="dropdown-item">
+                <img src="./images/icon-planning.svg" alt="watch icon" class="dropdown-icon">
+                <a href="#" class="dropdown-link">Planning</a>
+              </li>
+            </ul>
+          </li>
+          <!-- Company button with dropdown menu -->
+          <li class="nav-menu-item dropdown-wrapper">
+            <button class="btn dropdown-btn">Company 
+              <svg width="10" height="6" xmlns="http://www.w3.org/2000/svg" class="down-arrow"><path stroke="#686868" stroke-width="1.5" fill="none" d="m1 1 4 4 4-4" class="menu-item-icon"/></svg>
+           
+            </button>
+           <!-- Dropdown menu -->
+           <ul class="dropdown-menu left">
+            <li class="dropdown-item">
+              <a href="#" class="dropdown-link">History</a>
+            </li>
+            <li class="dropdown-item">  
+              <a href="#" class="dropdown-link">Our Team</a>
+            </li>
+            <li class="dropdown-item">
+              <a href="#" class="dropdown-link">Blog</a>
+            </li>
+          </ul>
+          </li>
+          <li class="nav-menu-item">
+            <a href="#" class="btn">Careers</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="#" class="btn">About</a>
+          </li>
+        </ul>
+        <!-- Close icon -->
+        <button class="close-btn" id="close-btn">
+          <img src="./images/icon-close-menu.svg" alt="close icon">
+        </button>
+      </nav>
+      <!-- Menu icon(hamburger icon) -->
+      <button class="open-btn" id="open-btn">
+        <img src="./images/icon-menu.svg" alt="menu icon">
+      </button>
+     <div class="align-right user-actions-wrapper">
+       <button class="btn">Login</button>
+       <button class="btn btn-outline">Register</button>
+     </div>
+    </header>
+  </div>
+  <!-- Above the fold section -->
+  <section class="atf-section">
+    <div class="section-container d-grid">
+      <article class="atf-content-wrapper">
+        <h2 class="atf-title"><span>Make</span> remote work</h2>
+        <p class="atf-content"> Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
+        <a href="#" class="btn atf-btn">Learn more</a>
+        <div class="company-logos-wrapper">
+          <img src="./images/client-databiz.svg" alt="databiz logo" class="company-logo">
+          <img src="./images/client-audiophile.svg" alt="audophile logo" class="company-logo">
+          <img src="./images/client-meet.svg" alt="meet logo" class="company-logo">
+          <img src="./images/client-maker.svg" alt="maker logo" class="company-logo">
+        </div>
+      </article>
+      <div class="img-wrapper">
+        <picture>
+          <source srcset="./images/image-hero-desktop.png" media="(min-width: 1080px)">
+          <img src="./images/image-hero-mobile.png" alt="standing guy with a laptop and abstract elements">
+        </picture>
+      
+      </div>
+    </div>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>
